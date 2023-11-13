@@ -1,4 +1,4 @@
-package continued.hideaway.mod.feat.config;
+package net.vampirismmc.mod.feat.config;
 
 import blue.endless.jankson.Jankson;
 import io.wispforest.owo.config.ConfigWrapper;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-public class HideawayPlusConfig extends ConfigWrapper<continued.hideaway.mod.feat.config.HideawayPlusConfigModel> {
+public class HideawayPlusConfig extends ConfigWrapper<net.vampirismmc.mod.feat.config.HideawayPlusConfigModel> {
 
     public final Keys keys = new Keys();
 
@@ -22,11 +22,11 @@ public class HideawayPlusConfig extends ConfigWrapper<continued.hideaway.mod.fea
     private final Option<java.lang.Boolean> noActivitySongs = this.optionForKey(this.keys.noActivitySongs);
 
     private HideawayPlusConfig() {
-        super(continued.hideaway.mod.feat.config.HideawayPlusConfigModel.class);
+        super(net.vampirismmc.mod.feat.config.HideawayPlusConfigModel.class);
     }
 
     private HideawayPlusConfig(Consumer<Jankson.Builder> janksonBuilder) {
-        super(continued.hideaway.mod.feat.config.HideawayPlusConfigModel.class, janksonBuilder);
+        super(net.vampirismmc.mod.feat.config.HideawayPlusConfigModel.class, janksonBuilder);
     }
 
     public static HideawayPlusConfig createAndLoad() {

@@ -12,11 +12,12 @@ base {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/hideaway_plus.accesswidener")
+    accessWidenerPath = file("src/main/resources/vmce.accesswidener")
 }
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven { url "https://jitpack.io" }
     maven { url "https://maven.shedaniel.me/" }
     maven { url 'https://maven.wispforest.io' }
@@ -29,6 +30,15 @@ repositories {
     }
     maven { url = "https://maven.terraformersmc.com/" }
     maven { url = "https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1" }
+    maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        force("net.fabricmc.fabric-api:fabric-api:0.89.0+1.20.1")
+        force("net.fabricmc:fabric-loader:0.14.22")
+        force("com.terraformersmc:modmenu:7.2.2")
+    }
 }
 
 dependencies {
@@ -43,8 +53,7 @@ dependencies {
 
     modRuntimeOnly ("com.terraformersmc:modmenu:7.2.2")
 
-    annotationProcessor modImplementation("io.wispforest:owo-lib:${libs.versions.owolib.get()}")
-    include("io.wispforest:owo-sentinel:${libs.versions.owolib.get()}")
+    modImplementation 'dev.isxander.yacl:yet-another-config-lib-fabric:3.1.1+1.20'
 
     implementation include('org.json:json:20220320')
     implementation include("com.github.jagrosh:DiscordIPC:-SNAPSHOT")

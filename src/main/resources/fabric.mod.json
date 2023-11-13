@@ -1,27 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "hideaway_plus",
+  "id": "vmce",
   "version": "${version}",
-  "name": "Hideaway+",
+  "name": "VampirismMC: Enhanced",
   "description": "",
   "authors": [
-    "skyelander",
-    "ella",
-    "OliviaTheVampire",
-    "Dragonostic"
+    "OliviaTheVampire"
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/hideaway_plus/icon.png",
+  "icon": "assets/vmce/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "continued.hideaway.mod.HideawayPlus"
+      "net.vampirismmc.mod.VampirismMCEnhanced"
     ]
   },
-  "accessWidener": "hideaway_plus.accesswidener",
+  "accessWidener": "vmce.accesswidener",
   "mixins": [
-    "hideaway_plus.mixins.json"
+    "vmce.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.22",

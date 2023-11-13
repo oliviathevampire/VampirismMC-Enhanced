@@ -1,0 +1,51 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "vmce:alphabet_smallcaps.png",
+      "chars": [
+        "ABCDEFGHIJKLM",
+        "NOPQRSTUVWXYZ"
+      ],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "vmce:punc_smallcaps.png",
+      "chars": [
+        ".!?+: "
+      ],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "vmce:icon.png",
+      "chars": [ "\uE001" ],
+      "height": 8,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "vmce:wordmark.png",
+      "chars": [ "\uE002" ],
+      "height": 16,
+      "ascent": 8
+    },
+    {
+      "type": "bitmap",
+      "file": "vmce:disc.png",
+      "chars": [ "\uE003" ],
+      "height": 8,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "vmce:friend.png",
+      "chars": [ "\uE004" ],
+      "height": 8,
+      "ascent": 7
+    }
+  ]
+}
